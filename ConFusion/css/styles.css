@@ -70,6 +70,12 @@ address {
   background-color:#eb8517b7 ;
 }
 
+#carouselButton{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
 /* .modal-body {
   background-color:#eb8517b7 ;
 } */
