@@ -1,0 +1,87 @@
+// less file compiled to css 
+
+// color variables
+@lt-gray: #ddd;
+@bg-dark: #9e5700;
+@bg-light: #eb8517;
+@bg-pale: #eb8517b7;
+
+// height variables
+@carousel-item-height: 300px;
+
+// mixin
+.zero-margin(@pad-up-dn: 0px, @pad-left-right: 0px) {
+  margin: 0px auto;
+  padding: @pad-up-dn @pad-left-right;
+}
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
+.navbar-dark {
+  background-color: @bg-dark;
+}
+
+.row-header {
+  .zero-margin();
+}
+
+.row-content {
+  .zero-margin(50px, 0px);
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.jumbotron {
+  .zero-margin(70px, 30px);
+  background-color: @bg-light;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+address {
+  .zero-margin();
+  font-size: 80%;
+  color: rgb(27, 26, 26);
+}
+
+.footer {
+  background-color: @bg-pale;
+  .zero-margin(20px, 0px);
+}
+
+.tab-content {
+  border-left: 1px solid @lt-gray;
+  border-right: 1px solid @lt-gray;
+  border-bottom: 1px solid @lt-gray;
+  padding: 10px;
+}
+
+.login {
+  cursor: pointer;
+}
+
+.carousel {
+  background: @bg-dark;
+  .carousel-item {
+    height: @carousel-item-height;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: @carousel-item-height;
+    }
+  }
+}
+
+.modal-header {
+  background-color: @bg-pale;
+}
+
+#carouselButton {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
