@@ -77,7 +77,15 @@ address {
 }
 
 .modal-header {
-  background-color: $bg-pale;
+  background-color: $bg-dark;
+  color: floralwhite;
+  .close{
+    color: floralwhite;
+  }
+}
+
+.modal-body{
+  background-color: $bg-light;
 }
 
 #carouselButton {

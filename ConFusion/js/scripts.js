@@ -14,4 +14,15 @@ $(document).ready(function () {
     }
 
   });
+
+  $("#login-btn").click(function(){
+    $("#loginModal").modal();
+  });
+
+  $("#reserve-btn").click(function(){
+    $("#reserveModal").modal();
+  });
+
+
+
 });

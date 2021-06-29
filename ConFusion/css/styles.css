@@ -53,7 +53,16 @@ address {
       min-height: 300px; }
 
 .modal-header {
-  background-color: #eb8517b7; }
+  background-color: #9e5700;
+  color:floralwhite; }
+
+.modal-body{
+  background-color:#eb8517 ;
+}
+
+.close{
+  color: floralwhite;
+}
 
 #carouselButton {
   position: absolute;
